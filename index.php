@@ -14,10 +14,10 @@
 			<p>This website is made as a requirement of interview task of Peopleplan</p>
 
 			<p>
-				The task compraised of three parts.
+				The task consists of three parts.
 		    <ol>
 		      <li>Read from CSV and insert data to MySQL through command line PHP</li>
-		      <li>Check if string is palindrome</li>
+		      <li>Check if given string is palindrome</li>
 		      <li>Retrieve second highest salary from given data set</li>
 		    </ol>
 			</p>
