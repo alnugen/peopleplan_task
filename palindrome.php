@@ -1,16 +1,14 @@
+<?php require "includes/site_config.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Check Palindrome</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <?php require "includes/header.php"; ?>
 	</head>
 	<body>
+	    <?php require "includes/top_design.php"; ?>
+<?php include("includes/nav.php");?>
 		<div class="container">
-  		<h1>Check Palindrome</h1>
+  		<h2>Check Palindrome</h2>
         <div class="col-sm-12">
   				<div class="row">
   					<div class="col-sm-4">
@@ -29,7 +27,9 @@
   					</div>
   				</div>
   			</div>
+<div id="message"></div>
     </div>
-	</body>
-<script src="palindrome.js"></script>
+    <?php include("includes/footer.php");?>
+</body>
+<script src="js/palindrome.js"></script>
 </html>

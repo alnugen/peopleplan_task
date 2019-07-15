@@ -1,5 +1,5 @@
 <?php
-require('config.php');
+require('includes/config.php');
 $conn = getDb();
 
 $file = fopen("employee.csv","r");
