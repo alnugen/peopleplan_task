@@ -1,19 +1,16 @@
+<?php require "includes/site_config.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Simple App</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <?php require "includes/header.php"; ?>
   </head>
   <body>
+    <?php require "includes/top_design.php"; ?>
+<?php include("includes/nav.php");?>
     <div class="container">
-        <h1>Simple App</h1>
+        <h2>MySQL Query</h2>
         <?php
-        	require_once 'config.php';
+        	require_once 'includes/db_config.php';
           $conn = getDb();
          	$result = $conn->query("SELECT * FROM user_salary");
         ?>
@@ -38,7 +35,7 @@
           </table>
           </div>
           <div class="row justify-content-center">
-            <a href="index.php?get_second_highest_salary" class="btn btn-info">Get Second Highest Salary</a>
+            <a href="?get_second_highest_salary" class="btn btn-info">Get Second Highest Salary</a>
           </div>
         <br>
       <?php
@@ -70,5 +67,6 @@
       </div>
     <?php } ?>
     </div>
+    <?php include("includes/footer.php");?>
   </body>
 </html>
